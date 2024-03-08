@@ -101,11 +101,12 @@ function ListDocuments() {
             <td className="px-6 py-3 border border-slate-200">File Name</td>
             <td className="px-6 py-3 border border-slate-200">Type</td>
             <td className="px-6 py-3 border border-slate-200">Folder</td>
-            <td className="px-6 py-3 border border-slate-200">Modified By</td>
             <td className="px-6 py-3 border border-slate-200">Department</td>
             <td className="px-6 py-3 border border-slate-200">Division</td>
             <td className="px-6 py-3 border border-slate-200">Office</td>
-            <td className="px-6 py-3 border border-slate-200">Dowload</td>
+            <td className="px-6 py-3 border border-slate-200">Download</td>
+            <td className="px-6 py-3 border border-slate-200">Modified By</td>
+            <td className="px-6 py-3 border border-slate-200">Modified Date</td>
             <td className="px-6 py-3 border border-slate-200">Edit</td>
             <td className="px-6 py-3 border border-slate-200">Delete</td>
           </tr>
@@ -124,9 +125,7 @@ function ListDocuments() {
               <td className="px-6 py-4 border border-slate-200">
                 {item.folder}
               </td>
-              <td className="px-6 py-4 border border-slate-200">
-                {item.modifiedBy}
-              </td>
+
               <td className="px-6 py-4 border border-slate-200">
                 {item.departmentName}
               </td>
@@ -135,6 +134,12 @@ function ListDocuments() {
               </td>
               <td className="px-6 py-4 border border-slate-200">
                 {item.officeName}
+              </td>
+              <td className="px-6 py-4 border border-slate-200">
+                {item.modifiedBy}
+              </td>
+              <td className="px-6 py-4 border border-slate-200">
+                {item.modifiedDate}
               </td>
               <td className="px-6 py-4 border border-slate-200">
                 <button
